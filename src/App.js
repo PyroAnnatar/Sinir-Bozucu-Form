@@ -154,6 +154,7 @@ export default function App() {
               name="privacyResponse"
               value="yes"
               onChange={handleChange}
+              checked={formData.privacyResponse === "yes"}
             />
             Evet
           </label>
@@ -164,8 +165,8 @@ export default function App() {
               id="no"
               name="privacyResponse"
               value="no"
-              defaultChecked
               onChange={handleChange}
+              checked={formData.privacyResponse === "no"}
             />
             Hayır
           </label>
@@ -177,6 +178,7 @@ export default function App() {
               name="privacyResponse"
               value="absolutely"
               onChange={handleChange}
+              checked={formData.privacyResponse === "absolutely"}
             />
             Kesinlikle
           </label>
@@ -189,12 +191,7 @@ export default function App() {
           değerlendirirsiniz?
         </legend>
 
-        <select
-          onChange={handleChange}
-          name="rating"
-          defaultValue="10"
-          value={formData.rating}
-        >
+        <select onChange={handleChange} name="rating" value={formData.rating}>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
