@@ -113,7 +113,6 @@ export default function App() {
     marketingResponse: true,
     wantsToSubmit: false,
   });
-  console.log(formData);
   return (
     <form onSubmit={fakeSubmit}>
       <h1>Dünyanın En Sinir Bozucu Formu</h1>
